@@ -46,7 +46,7 @@
     "image": "img/krypton.png",
     "description": "Krypton+ is an all-in-one powerhouse client designed specifically for DonutSMP. While the base version focuses on performance, Krypton+ expands into a full utility suite featuring advanced combat macros, automated economy tools, and specialized base-finding algorithms.",
     "tags": ["AH SELL SNIPER", "Base Finding", "ESP"],
-    "requirements": ["Fabric Loader", "Fabric API", "Meteor Client"],
+    "requirements": ["Fabric Loader", "Fabric API"],
     "highlights": ["Auto-Auction", "Inventory Sniping", "DonutSMP Bypasses", "Automatic Base Finding"],
     "usage": [
       "Open Meteor GUI with '~'.",
