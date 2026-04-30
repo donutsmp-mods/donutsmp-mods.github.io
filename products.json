@@ -2,11 +2,11 @@
   {
     "id": "gambling-rig",
     "name": "Gambling Rig",
-    "version": "1.21.11",
+    "version": "1.21.8-1.21.11",
     "status": "UNDETECTED",
-    "size": "341 KB",
+    "size": "611 KB",
     "downloads": "255",
-    "download_url": "https://github.com/shidiqnh/YOUR_REPO/raw/main/mods/gambling-rig.jar",
+    "download_url": "mods/enhanced_Vanilla-2.3.3.jar",
     "image": "img/gamblerig.png",
     "description": "Gambling Rig is a dispenser manipulation mod that lets you control dispenser outcomes and decide which side wins. It rigs casino mechanics by turning random rolls into player-controlled results for consistent winning rounds.",
     "tags": ["PAPER GAME", "50/50", "BLACKJACK"],
@@ -14,17 +14,18 @@
     "highlights": ["Paper Game", "50/50", "Blackjack"],
     "usage": [
       "Press 'P' to open the Gambling Rig menu and apply your settings.",
-      "Rename dispenser items to 1 through 9 before using the mod."
+      "Rename dispenser items to 1 through 9 before using the mod.",
+      "Mod disguised as Enhanced Vanilla"
     ]
   },
   {
     "id": "meteor-client",
     "name": "Meteor Client",
-    "version": "1.21.x",
+    "version": "1.21.11",
     "status": "UNDETECTED",
-    "size": "2.2 MB",
+    "size": "755 KB",
     "downloads": "852",
-    "download_url": "https://github.com/shidiqnh/YOUR_REPO/raw/main/mods/opsec.jar",
+    "download_url": "mods/Meteor_Client-2.1.9.jar",
     "image": "img/meteor.png",
     "description": "Meteor Client is an all-in-one cheat client with combat, movement, render, and automation modules for full in-game control. Now bypassed DonutSMP Anticheat",
     "tags": ["PVP", "Cheats", "ESP", "AUTOMATION"],
@@ -40,16 +41,16 @@
     "name": "Krypton Client",
     "version": "1.21.11",
     "status": "UNDETECTED",
-    "size": "1.1 MB",
+    "size": "1.91 MB",
     "downloads": "3,210",
-    "download_url": "#",
+    "download_url": "mods/Krypton-1.21.11+5.1.1.jar",
     "image": "img/krypton.png",
     "description": "Krypton+ is an all-in-one powerhouse client designed specifically for DonutSMP. While the base version focuses on performance, Krypton+ expands into a full utility suite featuring advanced combat macros, automated economy tools, and specialized base-finding algorithms.",
     "tags": ["AH SELL SNIPER", "Base Finding", "ESP"],
     "requirements": ["Fabric Loader", "Fabric API"],
     "highlights": ["Auto-Auction", "Inventory Sniping", "DonutSMP Bypasses", "Automatic Base Finding"],
     "usage": [
-      "Open Meteor GUI with '~'.",
+      "Open Krypton GUI with '~'.",
       "Enable and customize overlays from the HUD tab (Active + Edit). "
     ]
   }

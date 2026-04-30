@@ -114,9 +114,9 @@
                     // Handle Download Link
                     const dlBtn = document.getElementById('download-link');
                     dlBtn.href = p.download_url || "#";
-                    if (!p.download_url) {
-                        dlBtn.style.opacity = "0.5";
-                        dlBtn.innerText = "Unavailable";
+                    // Force the browser to download the file
+                    if (p.download_url && p.download_url !== "#") {
+                        dlBtn.setAttribute('download', p.download_url.split('/').pop());
                     }
 
                     // Image Fallback Logic (16:9 branded placeholder)
