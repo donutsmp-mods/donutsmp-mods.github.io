@@ -50,7 +50,7 @@
     "highlights": ["Auto-Auction", "Inventory Sniping", "DonutSMP Bypasses", "Automatic Base Finding"],
     "usage": [
       "Open Meteor GUI with '~'.",
-      "Enable and customize overlays from the HUD tab (Active + Edit)."
+      "Enable and customize overlays from the HUD tab (Active + Edit). "
     ]
   }
 ]
