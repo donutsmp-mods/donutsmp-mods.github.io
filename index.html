@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Full Height with Scroll Snap) -->
+    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
             <h1>The Ultimate <span class="gradient-text">DonutSMP</span> Utility</h1>
@@ -97,7 +97,16 @@
                 const products = await response.json();
                 const grid = document.getElementById('product-grid');
 
-                grid.innerHTML = products.map(p => `
+                // Filter out products where visibility is not true
+                const visibleProducts = products.filter(p => p.visibility === true);
+
+                // Handle case where no products are visible
+                if (visibleProducts.length === 0) {
+                    grid.innerHTML = "<p style='color:#475569; grid-column: 1/-1; text-align:center;'>No mods are currently active. Check back later!</p>";
+                    return;
+                }
+
+                grid.innerHTML = visibleProducts.map(p => `
                     <a href="detail.html?id=${p.id}" class="card">
                         <div class="card-content">
                             <div class="card-header">
