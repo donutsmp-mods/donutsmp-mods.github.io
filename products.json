@@ -2,6 +2,7 @@
   {
     "id": "gambling-rig",
     "name": "Gambling Rig",
+    "visibility": true,
     "version": "1.21.8-1.21.11",
     "status": "UNDETECTED",
     "size": "611 KB",
@@ -21,6 +22,7 @@
   {
     "id": "meteor-client",
     "name": "Meteor Client",
+    "visibility": true,
     "version": "1.21.11",
     "status": "UNDETECTED",
     "size": "755 KB",
@@ -39,6 +41,7 @@
   {
     "id": "krypton-client",
     "name": "Krypton Client",
+    "visibility": true,
     "version": "1.21.11",
     "status": "UNDETECTED",
     "size": "1.91 MB",
@@ -54,5 +57,30 @@
       "Enable and customize overlays from the HUD tab (Active + Edit).",
       "Now its Krypton Client Free Cracked"
     ]
-  }
+  },
+  {
+    "id": "dupe-client",
+    "name": "DonutSMP Dupe",
+    "visibility": false,
+    "version": "1.21.11",
+    "status": "UNDETECTED",
+    "size": "733 kb",
+    "downloads": "154",
+    "download_url": "mods/DuperTrooper-12.9.1.jar",
+    "image": "",
+    "description": "The ultimate duplication utility for DonutSMP. This mod features undetected dupe methods, ender chest exploits, and /AH glitches specifically designed for high-stakes Donut SMP servers. Fully compatible with Fabric 1.21.11.",
+    "tags": ["DONUTSMP DUPE", "DUPLICATION GLITCH", "MINECRAFT DUPE 2026", "MINECRAFT HACKS 1.21.11"],
+    "requirements": ["Fabric Loader", "Fabric API"],
+    "highlights": [
+        "Working DonutSMP Dupe Methods",
+        "Packet-Based Dupe Logic",
+        "Tested on May 2026",
+        "Bypasses Latest DonutSMP Anti-Cheat"
+    ],
+    "usage": [
+        "Install Fabric Loader and API first.",
+        "Enter highest ping server",
+        "Put item in ender chest and click dupe Hotkey ('~' default)"
+    ]
+}
 ]
