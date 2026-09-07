@@ -89,8 +89,55 @@
         <p>&copy; 2026 Cracked Clients DonutSMP. Cracked Clients is a third-party utility mod hub. We are not affiliated with Mojang or Microsoft.</p>
     </footer>
 
-    <!-- JavaScript for Dynamic Content -->
+    <!-- Custom Warning Modal for Detected Mods -->
+    <div id="warning-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-warning-text">
+            <div class="modal-icon-wrapper">
+                <span class="material-symbols-outlined">warning</span>
+            </div>
+            <h3 class="modal-title" id="modal-mod-name">Mod Detected</h3>
+            <p class="modal-warning-text" id="modal-warning-text">THIS MODS IS CURRENTLY DETECTED! ARE YOU SURE?</p>
+            <p class="modal-desc">This mod is flagged by DonutSMP anti-cheat. Proceeding may result in bans or in-game restrictions.</p>
+            <div class="modal-actions">
+                <button type="button" class="btn-modal-cancel" id="modal-cancel-btn">Cancel</button>
+                <a href="#" class="btn-modal-proceed" id="modal-proceed-btn">Proceed Anyway</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Dynamic Content & Modal Interaction -->
     <script>
+        const warningModal = document.getElementById('warning-modal');
+        const modalModName = document.getElementById('modal-mod-name');
+        const modalProceedBtn = document.getElementById('modal-proceed-btn');
+        const modalCancelBtn = document.getElementById('modal-cancel-btn');
+
+        function showWarningModal(modName, detailUrl) {
+            modalModName.textContent = modName || 'Mod Detected';
+            modalProceedBtn.href = detailUrl;
+            warningModal.classList.add('active');
+            warningModal.setAttribute('aria-hidden', 'false');
+        }
+
+        function closeWarningModal() {
+            warningModal.classList.remove('active');
+            warningModal.setAttribute('aria-hidden', 'true');
+        }
+
+        modalCancelBtn.addEventListener('click', closeWarningModal);
+
+        warningModal.addEventListener('click', (e) => {
+            if (e.target === warningModal) {
+                closeWarningModal();
+            }
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && warningModal.classList.contains('active')) {
+                closeWarningModal();
+            }
+        });
+
         async function loadProducts() {
             try {
                 const response = await fetch('./products.json');
@@ -106,15 +153,17 @@
                     return;
                 }
 
-                grid.innerHTML = visibleProducts.map(p => `
-                    <a href="detail.html?id=${p.id}" class="card">
+                grid.innerHTML = visibleProducts.map(p => {
+                    const isDetected = p.status && p.status.trim().toUpperCase() === 'DETECTED';
+                    return `
+                    <a href="detail.html?id=${p.id}" class="card ${isDetected ? 'detected-card' : ''}" data-id="${p.id}" data-detected="${isDetected}" data-name="${p.name}">
                         <div class="card-content">
                             <div class="card-header">
                                 <h3>${p.name}</h3>
                                 <span class="version-tag">${p.version}</span>
                             </div>
                             
-                            <div class="status-row">
+                            <div class="status-row ${isDetected ? 'detected' : ''}">
                                 <span class="status-dot"></span>
                                 <span class="status-text">${p.status}</span>
                             </div>
@@ -143,7 +192,22 @@
                             </div>
                         </div>
                     </a>
-                `).join('');
+                `;
+                }).join('');
+
+                // Intercept clicks on detected mod cards
+                grid.querySelectorAll('.card').forEach(card => {
+                    card.addEventListener('click', function(e) {
+                        const isDetected = this.dataset.detected === 'true';
+                        if (isDetected) {
+                            e.preventDefault();
+                            const modName = this.dataset.name;
+                            const detailUrl = this.getAttribute('href');
+                            showWarningModal(modName, detailUrl);
+                        }
+                    });
+                });
+
             } catch (error) {
                 console.error("Error loading products:", error);
                 document.getElementById('product-grid').innerHTML = "<p style='color:red;'>Failed to load tools. Ensure products.json exists.</p>";
