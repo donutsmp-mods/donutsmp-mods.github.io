@@ -152,13 +152,13 @@
     "highlights": [
       "Working DonutSMP Dupe Methods",
       "Packet-Based Dupe Logic",
-      "Tested on May 2026",
+      "Tested on Sept 2026",
       "Bypasses Latest DonutSMP Anti-Cheat"
     ],
     "usage": [
       "Install Fabric Loader and API first.",
       "Do '/rtp' and do '/home' 1 quickly after teleporting",
-      "Put item in ender chest and click dupe Hotkey ('~' default)",
+      "Put item in ender chest and click dupe Hotkey ('~' default) or type command in chat",
       "Disconnect and enter other server (any server works). Then come back to DonutSMP",
       "If method above doesnt work, watch my video for newest method"
     ]
