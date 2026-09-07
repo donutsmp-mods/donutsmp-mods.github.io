@@ -8,6 +8,7 @@
     --text-dim: #94a3b8;
     --glass-border: rgba(255, 255, 255, 0.08);
     --status-green: #22c55e;
+    --status-red: #ef4444;
     --version-blue: #818cf8;
 }
 
@@ -216,6 +217,15 @@ body {
     text-transform: uppercase;
 }
 
+.status-row.detected .status-dot {
+    background: var(--status-red);
+    box-shadow: 0 0 10px var(--status-red);
+}
+
+.status-row.detected .status-text {
+    color: var(--status-red);
+}
+
 .size-info {
     display: flex;
     align-items: center;
@@ -405,6 +415,12 @@ body {
     text-transform: uppercase;
 }
 
+.status-badge.detected {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--status-red);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
 .action-btns { display: flex; gap: 15px; margin-top: 35px; }
 
 .btn-download {
@@ -479,4 +495,139 @@ body {
 /* Optional: Ensure it stays orange even after being clicked */
 .step-card a:visited {
     color: var(--accent);
+}
+
+/* --- Warning Modal Popup for Detected Mods --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-box {
+    background: #111116;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 50px rgba(239, 68, 68, 0.2);
+    border-radius: 24px;
+    max-width: 480px;
+    width: 100%;
+    padding: 35px 30px;
+    text-align: center;
+    transform: scale(0.92) translateY(15px);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.modal-overlay.active .modal-box {
+    transform: scale(1) translateY(0);
+}
+
+.modal-icon-wrapper {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 25px rgba(239, 68, 68, 0.25);
+}
+
+.modal-icon-wrapper .material-symbols-outlined {
+    font-size: 38px;
+    color: var(--status-red);
+}
+
+.modal-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.modal-warning-text {
+    color: var(--status-red);
+    font-weight: 800;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.modal-desc {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btn-modal-cancel {
+    flex: 1;
+    padding: 13px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--glass-border);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.2s;
+}
+
+.btn-modal-cancel:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+.btn-modal-proceed {
+    flex: 1;
+    padding: 13px 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    border: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    transition: 0.2s;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+}
+
+.btn-modal-proceed:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
 }
