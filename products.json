@@ -36,6 +36,38 @@
     ]
   },
   {
+    "id": "krypton-client",
+    "name": "Krypton Client",
+    "visibility": true,
+    "version": "1.21.11",
+    "status": "UNDETECTED",
+    "size": "1.91 MB",
+    "downloads": "3,210",
+    "download_url": "mods/Krypton-1.21.11+5.1.1.jar",
+    "image": "img/krypton.png",
+    "description": "Krypton Cracked Client is an all-in-one powerhouse client designed specifically for DonutSMP. While the base version focuses on performance, Krypton Cracked expands into a full utility suite featuring advanced combat macros, automated economy tools, and specialized base-finding algorithms.",
+    "tags": [
+      "AH SELL SNIPER",
+      "Base Finding",
+      "ESP"
+    ],
+    "requirements": [
+      "Fabric Loader",
+      "Fabric API"
+    ],
+    "highlights": [
+      "Auto-Auction",
+      "Inventory Sniping",
+      "DonutSMP Bypasses",
+      "Automatic Base Finding"
+    ],
+    "usage": [
+      "Open Krypton GUI with '~'.",
+      "Enable and customize overlays from the HUD tab (Active + Edit).",
+      "Now its Krypton Client Free Cracked"
+    ]
+  },
+  {
     "id": "gambling-rig",
     "name": "Gambling Rig",
     "visibility": true,
@@ -94,38 +126,6 @@
     "usage": [
       "Open Meteor GUI with 'Right Shift'.",
       "Enable and customize overlays from the HUD tab (Active + Edit)."
-    ]
-  },
-  {
-    "id": "krypton-client",
-    "name": "Krypton Client",
-    "visibility": true,
-    "version": "1.21.11",
-    "status": "UNDETECTED",
-    "size": "1.91 MB",
-    "downloads": "3,210",
-    "download_url": "mods/Krypton-1.21.11+5.1.1.jar",
-    "image": "img/krypton.png",
-    "description": "Krypton Cracked Client is an all-in-one powerhouse client designed specifically for DonutSMP. While the base version focuses on performance, Krypton Cracked expands into a full utility suite featuring advanced combat macros, automated economy tools, and specialized base-finding algorithms.",
-    "tags": [
-      "AH SELL SNIPER",
-      "Base Finding",
-      "ESP"
-    ],
-    "requirements": [
-      "Fabric Loader",
-      "Fabric API"
-    ],
-    "highlights": [
-      "Auto-Auction",
-      "Inventory Sniping",
-      "DonutSMP Bypasses",
-      "Automatic Base Finding"
-    ],
-    "usage": [
-      "Open Krypton GUI with '~'.",
-      "Enable and customize overlays from the HUD tab (Active + Edit).",
-      "Now its Krypton Client Free Cracked"
     ]
   },
   {
