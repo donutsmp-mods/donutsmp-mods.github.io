@@ -2,7 +2,8 @@
 :root {
     --bg: #050505;
     --card-bg: rgba(20, 20, 25, 0.7);
-    --accent: #f39c12; /* Brand Orange */
+    --accent: #f39c12;
+    /* Brand Orange */
     --accent-alt: #e67e22;
     --text-main: #ffffff;
     --text-dim: #94a3b8;
@@ -21,7 +22,8 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity; /* Enables magnetic scroll snapping */
+    scroll-snap-type: y proximity;
+    /* Enables magnetic scroll snapping */
 }
 
 body {
@@ -131,9 +133,22 @@ body {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-12px);}
-    60% {transform: translateY(-6px);}
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-12px);
+    }
+
+    60% {
+        transform: translateY(-6px);
+    }
 }
 
 /* --- Product Grid Section --- */
@@ -150,12 +165,19 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .grid { grid-template-columns: repeat(2, 1fr); }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 650px) {
-    .grid { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 3rem; }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
 }
 
 /* --- Product Card --- */
@@ -248,7 +270,8 @@ body {
 }
 
 /* Tags & Requirements */
-.tags, .req-tags {
+.tags,
+.req-tags {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
@@ -372,7 +395,10 @@ body {
 }
 
 /* --- Detail Page Specifics --- */
-.detail-container { padding-top: 120px; margin-bottom: 80px; }
+.detail-container {
+    padding-top: 120px;
+    margin-bottom: 80px;
+}
 
 .detail-top-grid {
     display: grid;
@@ -382,10 +408,15 @@ body {
 }
 
 @media (max-width: 900px) {
-    .detail-top-grid { grid-template-columns: 1fr; }
+    .detail-top-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-.main-info-card, .info-card, .stat-box, .media-card {
+.main-info-card,
+.info-card,
+.stat-box,
+.media-card {
     background: var(--card-bg);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
@@ -421,7 +452,11 @@ body {
     border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
-.action-btns { display: flex; gap: 15px; margin-top: 35px; }
+.action-btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
 
 .btn-download {
     background: linear-gradient(135deg, var(--accent), var(--accent-alt));
@@ -433,7 +468,10 @@ body {
     transition: 0.3s;
 }
 
-.btn-download:hover { transform: translateY(-3px); filter: brightness(1.1); }
+.btn-download:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
 
 .btn-back {
     background: rgba(255, 255, 255, 0.05);
@@ -445,11 +483,24 @@ body {
     transition: 0.3s;
 }
 
-.btn-back:hover { background: rgba(255,255,255,0.1); color: var(--accent); }
+.btn-back:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent);
+}
 
-.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
 
-.stat-box strong { display: block; font-size: 1.1rem; color: #fff; margin-top: 5px; }
+.stat-box strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 5px;
+}
 
 .detail-bottom-grid {
     display: grid;
@@ -458,10 +509,15 @@ body {
 }
 
 @media (max-width: 900px) {
-    .detail-bottom-grid { grid-template-columns: 1fr; }
+    .detail-bottom-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-.detail-list { list-style: none; padding-top: 15px; }
+.detail-list {
+    list-style: none;
+    padding-top: 15px;
+}
 
 .detail-list li {
     color: var(--text-dim);
@@ -481,7 +537,8 @@ body {
 
 /* Update this section in your style.css */
 .step-card a {
-    color: var(--accent); /* Forces the link to be brand orange */
+    color: var(--accent);
+    /* Forces the link to be brand orange */
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
