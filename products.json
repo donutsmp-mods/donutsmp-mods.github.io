@@ -35,7 +35,7 @@
     "name": "OLD Meteor Client",
     "visibility": true,
     "version": "1.21.11",
-    "status": "DETECTED",
+    "status": "UNDETECTED",
     "size": "755 KB",
     "downloads": "852",
     "download_url": "mods/Meteor_Client-2.1.9.jar",
