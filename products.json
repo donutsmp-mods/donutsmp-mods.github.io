@@ -1,5 +1,40 @@
 [
   {
+    "id": "vape-v4-cracked",
+    "name": "Vape V4 Client Cracked",
+    "visibility": true,
+    "version": "1.21.8-1.21.11",
+    "status": "UNDETECTED",
+    "size": "2.63 MB",
+    "downloads": "5,420",
+    "download_url": "mods/Vape-Client-1.21.xx-udpated.jar",
+    "image": "img/vape.png",
+    "description": "Vape V4 Cracked Client is the premier undetected ghost client engineered specifically for DonutSMP PvP. Features humanized AutoClicker, smooth AimAssist, customizable Reach (3.0-3.8m), silent Velocity reduction, and glowing Player/Chest ESP. Fully undetected on DonutSMP anticheats with zero-delay injection and self-destruct capabilities.",
+    "tags": [
+      "VAPE V4 CRACKED",
+      "GHOST CLIENT",
+      "DONUTSMP PVP",
+      "REACH & AUTOCLICKER",
+      "UNDETECTED"
+    ],
+    "requirements": [
+      "Fabric Loader",
+      "Fabric API"
+    ],
+    "highlights": [
+      "100% Undetected on DonutSMP Anticheat",
+      "Humanized AutoClicker & Smooth AimAssist",
+      "Custom Reach (3.0m - 3.8m) & Silent Velocity",
+      "Player, Base & Chest ESP Overlays",
+      "Clean Self-Destruct & Stream-Proof Mode"
+    ],
+    "usage": [
+      "Press 'Right Shift' to open the Vape V4 GUI menu.",
+      "Configure Legit Combat modules (Reach: 3.2m, AutoClicker: 14-18 CPS) for seamless undetectable gameplay.",
+      "Bind module hotkeys in the Keybinds tab for fast stealth toggling."
+    ]
+  },
+  {
     "id": "gambling-rig",
     "name": "Gambling Rig",
     "visibility": true,
@@ -35,7 +70,7 @@
     "name": "OLD Meteor Client",
     "visibility": true,
     "version": "1.21.11",
-    "status": "UNDETECTED",
+    "status": "DETECTED",
     "size": "755 KB",
     "downloads": "852",
     "download_url": "mods/Meteor_Client-2.1.9.jar",
