@@ -157,8 +157,9 @@
     ],
     "usage": [
       "Install Fabric Loader and API first.",
-      "Enter highest ping server",
-      "Put item in ender chest and click dupe Hotkey ('~' default)"
+      "Do '/rtp' and do '/home' 1 quickly after teleporting",
+      "Put item in ender chest and click dupe Hotkey ('~' default)",
+      "Disconnect and enter other server (any server works). Then come back to DonutSMP"
     ]
   }
 ]
