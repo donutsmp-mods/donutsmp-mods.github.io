@@ -206,87 +206,100 @@
                     document.getElementById('det-size').innerText = p.size;
                     document.getElementById('det-dl').innerText = p.downloads;
 
-                    // Handle Download Link and Version Selection Modal
-                    const dlBtn = document.getElementById('download-link');
-                    const versionModal = document.getElementById('version-modal');
-                    const versionListContainer = document.getElementById('version-list-container');
-                    const versionModalClose = document.getElementById('version-modal-close');
+                        // Handle Download Link and Version Selection Modal
+                        const dlBtn = document.getElementById('download-link');
+                        const versionModal = document.getElementById('version-modal');
+                        const versionListContainer = document.getElementById('version-list-container');
+                        const versionModalClose = document.getElementById('version-modal-close');
 
-                    if (p.versions && Array.isArray(p.versions) && p.versions.length > 1) {
-                        // Render Version Selection Options
-                        document.getElementById('version-modal-title').innerText = `Select ${p.name} Version`;
-                        document.getElementById('version-modal-desc').innerText = `Choose your Minecraft version build for ${p.name}:`;
-                        
-                        versionListContainer.innerHTML = p.versions.map(v => {
-                            let badgeList = [];
-                            if (Array.isArray(v.badges)) {
-                                badgeList = v.badges;
-                            } else if (v.badge) {
-                                badgeList = [v.badge];
-                            }
+                        function trackDownload(modId) {
+                            if (!modId) return;
+                            try {
+                                fetch(`https://countapi.mileshilliard.com/api/v1/hit/donutsmp_v1_${modId}`, { method: 'GET', mode: 'cors' }).catch(() => {});
+                            } catch (err) {}
+                        }
 
-                            const badgesHtml = badgeList.map(b => {
-                                const bLower = b.toLowerCase();
-                                let colorClass = 'alt';
-                                if (bLower.includes('recommend')) colorClass = '';
-                                else if (bLower.includes('latest') || bLower.includes('active') || bLower.includes('stable')) colorClass = 'green';
-                                else if (bLower.includes('opsec') || bLower.includes('fabric')) colorClass = 'blue';
-                                else if (bLower.includes('bypass') || bLower.includes('stealth')) colorClass = 'purple';
-                                return `<span class="version-badge ${colorClass}">${b}</span>`;
+                        if (p.versions && Array.isArray(p.versions) && p.versions.length > 1) {
+                            // Render Version Selection Options
+                            document.getElementById('version-modal-title').innerText = `Select ${p.name} Version`;
+                            document.getElementById('version-modal-desc').innerText = `Choose your Minecraft version build for ${p.name}:`;
+                            
+                            versionListContainer.innerHTML = p.versions.map(v => {
+                                let badgeList = [];
+                                if (Array.isArray(v.badges)) {
+                                    badgeList = v.badges;
+                                } else if (v.badge) {
+                                    badgeList = [v.badge];
+                                }
+
+                                const badgesHtml = badgeList.map(b => {
+                                    const bLower = b.toLowerCase();
+                                    let colorClass = 'alt';
+                                    if (bLower.includes('recommend')) colorClass = '';
+                                    else if (bLower.includes('latest') || bLower.includes('active') || bLower.includes('stable')) colorClass = 'green';
+                                    else if (bLower.includes('opsec') || bLower.includes('fabric')) colorClass = 'blue';
+                                    else if (bLower.includes('bypass') || bLower.includes('stealth')) colorClass = 'purple';
+                                    return `<span class="version-badge ${colorClass}">${b}</span>`;
+                                }).join('');
+
+                                const fileName = v.download_url ? v.download_url.split('/').pop() : 'client.jar';
+                                return `
+                                    <div class="version-item-card">
+                                        <div class="version-item-info">
+                                            <div class="version-item-title-row">
+                                                <span class="version-item-name">${v.name || v.version}</span>
+                                                ${badgesHtml}
+                                            </div>
+                                            ${v.desc ? `<p class="version-item-desc">${v.desc}</p>` : ''}
+                                            <span class="version-item-meta">
+                                                <span class="material-symbols-outlined" style="font-size:16px;">folder_zip</span>
+                                                ${v.size || p.size}
+                                            </span>
+                                        </div>
+                                        <a href="${v.download_url || '#'}" download="${fileName}" class="btn-version-download">
+                                            <span class="material-symbols-outlined" style="font-size:18px;">download</span>
+                                            Download
+                                        </a>
+                                    </div>
+                                `;
                             }).join('');
 
-                            const fileName = v.download_url ? v.download_url.split('/').pop() : 'client.jar';
-                            return `
-                                <div class="version-item-card">
-                                    <div class="version-item-info">
-                                        <div class="version-item-title-row">
-                                            <span class="version-item-name">${v.name || v.version}</span>
-                                            ${badgesHtml}
-                                        </div>
-                                        ${v.desc ? `<p class="version-item-desc">${v.desc}</p>` : ''}
-                                        <span class="version-item-meta">
-                                            <span class="material-symbols-outlined" style="font-size:16px;">folder_zip</span>
-                                            ${v.size || p.size}
-                                        </span>
-                                    </div>
-                                    <a href="${v.download_url || '#'}" download="${fileName}" class="btn-version-download">
-                                        <span class="material-symbols-outlined" style="font-size:18px;">download</span>
-                                        Download
-                                    </a>
-                                </div>
-                            `;
-                        }).join('');
+                            // Attach tracking to version buttons
+                            versionListContainer.querySelectorAll('.btn-version-download').forEach(btn => {
+                                btn.addEventListener('click', () => trackDownload(p.id));
+                            });
 
-                        // Open modal on Download button click
-                        dlBtn.addEventListener('click', function(e) {
-                            e.preventDefault();
-                            versionModal.classList.add('active');
-                        });
+                            // Open modal on Download button click
+                            dlBtn.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                versionModal.classList.add('active');
+                            });
 
-                        // Modal Close Listeners
-                        versionModalClose.addEventListener('click', function() {
-                            versionModal.classList.remove('active');
-                        });
-
-                        versionModal.addEventListener('click', function(e) {
-                            if (e.target === versionModal) {
+                            // Modal Close Listeners
+                            versionModalClose.addEventListener('click', function() {
                                 versionModal.classList.remove('active');
-                            }
-                        });
+                            });
 
-                        // Close on ESC key
-                        document.addEventListener('keydown', function(e) {
-                            if (e.key === 'Escape' && versionModal.classList.contains('active')) {
-                                versionModal.classList.remove('active');
+                            versionModal.addEventListener('click', function(e) {
+                                if (e.target === versionModal) {
+                                    versionModal.classList.remove('active');
+                                }
+                            });
+
+                            // Close on ESC key
+                            document.addEventListener('keydown', function(e) {
+                                if (e.key === 'Escape' && versionModal.classList.contains('active')) {
+                                    versionModal.classList.remove('active');
+                                }
+                            });
+                        } else {
+                            // Single version direct download
+                            dlBtn.href = p.download_url || "#";
+                            if (p.download_url && p.download_url !== "#") {
+                                dlBtn.setAttribute('download', p.download_url.split('/').pop());
                             }
-                        });
-                    } else {
-                        // Single version direct download
-                        dlBtn.href = p.download_url || "#";
-                        if (p.download_url && p.download_url !== "#") {
-                            dlBtn.setAttribute('download', p.download_url.split('/').pop());
+                            dlBtn.addEventListener('click', () => trackDownload(p.id));
                         }
-                    }
 
                     // Image Fallback Logic (16:9 branded placeholder)
                     const imgElement = document.getElementById('det-img');
