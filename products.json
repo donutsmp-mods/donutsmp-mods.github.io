@@ -39,11 +39,11 @@
     "id": "opsec-mod",
     "name": "OpSec Anti-Cheat Bypass Mod",
     "visibility": true,
-    "version": "1.21.11",
+    "version": "1.21.8-1.21.11",
     "status": "UNDETECTED",
     "size": "420 KB",
     "downloads": "8,940",
-    "download_url": "mods/opsec-1.21.11+v1.1.7.jar",
+    "download_url": "mods/Krypton-1.21.11+5.1.2.jar",
     "image": "",
     "description": "OpSec Anti-Cheat Bypass is the essential stealth utility for DonutSMP. Automatically blocks server mod-list queries, sanitizes translation lookups, and spoofs your client so you can run Meteor Client, Glazed, and other mods 100% undetected without bans.",
     "tags": [
@@ -71,131 +71,160 @@
     ]
   },
   {
-      "id": "krypton-client",
-      "name": "Krypton Client",
-      "visibility": true,
-      "version": "1.21.11",
-      "status": "UNDETECTED",
-      "size": "1.91 MB",
-      "downloads": "3,210",
-      "download_url": "mods/Krypton-1.21.11+5.1.2.jar",
-      "image": "img/krypton.png",
-      "description": "Krypton Cracked Client is an all-in-one powerhouse client designed specifically for DonutSMP. While the base version focuses on performance, Krypton Cracked expands into a full utility suite featuring advanced combat macros, automated economy tools, and specialized base-finding algorithms.",
-      "tags": [
-        "AH SELL SNIPER",
-        "Base Finding",
-        "ESP"
-      ],
-      "requirements": [
-        "Fabric Loader",
-        "Fabric API"
-      ],
-      "highlights": [
-        "Auto-Auction",
-        "Inventory Sniping",
-        "DonutSMP Bypasses",
-        "Automatic Base Finding"
-      ],
-      "usage": [
-        "Open Krypton GUI with '~'.",
-        "Enable and customize overlays from the HUD tab (Active + Edit).",
-        "Now its Krypton Client Free Cracked"
-      ]
-    },
-    {
-      "id": "gambling-rig",
-      "name": "Gambling Rig",
-      "visibility": true,
-      "version": "1.21.8-1.21.11",
-      "status": "UNDETECTED",
-      "size": "611 KB",
-      "downloads": "255",
-      "download_url": "mods/enchanced-vanilla-1.21.x.jar",
-      "image": "img/gamblerig.png",
-      "description": "Gambling Rig is a dispenser manipulation mod that lets you control dispenser outcomes and decide which side wins. It rigs casino mechanics by turning random rolls into player-controlled results for consistent winning rounds.",
-      "tags": [
-        "PAPER GAME",
-        "50/50",
-        "BLACKJACK"
-      ],
-      "requirements": [
-        "Fabric Loader",
-        "Fabric API"
-      ],
-      "highlights": [
-        "Paper Game",
-        "50/50",
-        "Blackjack"
-      ],
-      "usage": [
-        "Press 'P' to open the Gambling Rig menu and apply your settings.",
-        "Rename dispenser items to 1 through 9 before using the mod.",
-        "Mod disguised as Enhanced Vanilla"
-      ]
-    },
-    {
-      "id": "meteor-client",
-      "name": "OLD Meteor Client",
-      "visibility": true,
-      "version": "1.21.11",
-      "status": "DETECTED",
-      "size": "755 KB",
-      "downloads": "852",
-      "download_url": "mods/cracked-client.jar",
-      "image": "img/meteor.png",
-      "description": "Meteor Client is an all-in-one cheat client with combat, movement, render, and automation modules for full in-game control. Now bypassed DonutSMP Anticheat",
-      "tags": [
-        "PVP",
-        "Cheats",
-        "ESP",
-        "AUTOMATION"
-      ],
-      "requirements": [
-        "Fabric Loader"
-      ],
-      "highlights": [
-        "Blocks and Player ESP",
-        "UI Config",
-        "Add Custom Module"
-      ],
-      "usage": [
-        "Open Meteor GUI with 'Right Shift'.",
-        "Enable and customize overlays from the HUD tab (Active + Edit)."
-      ]
-    },
-    {
-      "id": "dupe-client",
-      "name": "DonutSMP Dupe",
-      "visibility": false,
-      "version": "1.21.11",
-      "status": "UNDETECTED",
-      "size": "733 kb",
-      "downloads": "1524",
-      "download_url": "mods/DuperTrooper-12.11.jar",
-      "image": "",
-      "description": "The ultimate duplication utility for DonutSMP. This mod features undetected dupe methods, ender chest exploits, and /AH glitches specifically designed for high-stakes Donut SMP servers. Fully compatible with Fabric 1.21.11.",
-      "tags": [
-        "DONUTSMP DUPE",
-        "DUPLICATION GLITCH",
-        "MINECRAFT DUPE 2026",
-        "MINECRAFT HACKS 1.21.11"
-      ],
-      "requirements": [
-        "Fabric Loader",
-        "Fabric API"
-      ],
-      "highlights": [
-        "Working DonutSMP Dupe Methods",
-        "Packet-Based Dupe Logic",
-        "Tested on Sept 2026",
-        "Bypasses Latest DonutSMP Anti-Cheat"
-      ],
-      "usage": [
-        "Install Fabric Loader and API first.",
-        "Do '/rtp' and do '/home' 1 quickly after teleporting",
-        "Put item in ender chest and click dupe Hotkey ('~' default) or type command in chat",
-        "Disconnect and enter other server (any server works). Then come back to DonutSMP",
-        "If method above doesnt work, watch my video for newest method"
-      ]
-    }
-  ]
+    "id": "krypton-client",
+    "name": "Krypton Client",
+    "visibility": true,
+    "version": "1.21.11",
+    "status": "UNDETECTED",
+    "size": "1.91 MB",
+    "downloads": "3,210",
+    "download_url": "mods/Krypton-1.21.11+5.1.2.jar",
+    "image": "img/krypton.png",
+    "description": "Krypton Cracked Client is an all-in-one powerhouse client designed specifically for DonutSMP. While the base version focuses on performance, Krypton Cracked expands into a full utility suite featuring advanced combat macros, automated economy tools, and specialized base-finding algorithms.",
+    "tags": [
+      "AH SELL SNIPER",
+      "Base Finding",
+      "ESP"
+    ],
+    "requirements": [
+      "Fabric Loader",
+      "Fabric API"
+    ],
+    "highlights": [
+      "Auto-Auction",
+      "Inventory Sniping",
+      "DonutSMP Bypasses",
+      "Automatic Base Finding"
+    ],
+    "usage": [
+      "Open Krypton GUI with '~'.",
+      "Enable and customize overlays from the HUD tab (Active + Edit).",
+      "Now its Krypton Client Free Cracked"
+    ]
+  },
+  {
+    "id": "gambling-rig",
+    "name": "Gambling Rig",
+    "visibility": true,
+    "version": "1.21.8-1.21.11",
+    "status": "UNDETECTED",
+    "size": "611 KB",
+    "downloads": "255",
+    "download_url": "mods/enchanced-vanilla-1.21.x.jar",
+    "image": "img/gamblerig.png",
+    "description": "Gambling Rig is a dispenser manipulation mod that lets you control dispenser outcomes and decide which side wins. It rigs casino mechanics by turning random rolls into player-controlled results for consistent winning rounds.",
+    "tags": [
+      "PAPER GAME",
+      "50/50",
+      "BLACKJACK"
+    ],
+    "requirements": [
+      "Fabric Loader",
+      "Fabric API"
+    ],
+    "highlights": [
+      "Paper Game",
+      "50/50",
+      "Blackjack"
+    ],
+    "usage": [
+      "Press 'P' to open the Gambling Rig menu and apply your settings.",
+      "Rename dispenser items to 1 through 9 before using the mod.",
+      "Mod disguised as Enhanced Vanilla"
+    ]
+  },
+  {
+    "id": "meteor-client",
+    "name": "Meteor Client",
+    "visibility": true,
+    "version": "1.21.11 / 26.1.2",
+    "status": "UNDETECTED",
+    "size": "5 MB",
+    "downloads": "4,820",
+    "download_url": "mods/cracked-client.jar",
+    "image": "img/meteor.png",
+    "description": "Meteor Client is the most versatile combat and utility cheat client for DonutSMP. Features Crystal Aura, Auto-Totem, StorageESP, Tracers, and automation modules. Fully undetected on DonutSMP when run alongside the OpSec stealth mod.",
+    "tags": [
+      "PVP",
+      "OPSEC BYPASS",
+      "ESP",
+      "AUTOMATION",
+      "UNDETECTED"
+    ],
+    "requirements": [
+      "Fabric Loader",
+      "Fabric API",
+      "OpSec Mod (REQUIRED!)"
+    ],
+    "highlights": [
+      "Undetected with OpSec Mod on DonutSMP",
+      "Crystal Aura & Auto-Totem",
+      "Blocks, Player & Storage ESP",
+      "Custom Module Config & Combat Macros"
+    ],
+    "usage": [
+      "Open Meteor GUI with 'Right Shift'.",
+      "Install OpSec in your .minecraft/mods folder for 100% undetected stealth on DonutSMP.",
+      "Enable and customize modules from the HUD & Combat tabs."
+    ],
+    "versions": [
+      {
+        "version": "1.21.11",
+        "name": "Meteor Client v1.21.11",
+        "badges": [
+          "Recommended",
+          "OpSec REQUIRED"
+        ],
+        "size": "5.4 MB",
+        "desc": "Latest stable release for Minecraft 1.21.8 – 1.21.11 with full OpSec support.",
+        "download_url": "mods/meteor-client-1.21.11.jar"
+      },
+      {
+        "version": "26.1.2",
+        "name": "Meteor Client v26.1.2",
+        "badges": [
+          "Alternative",
+          "OpSec REQUIRED"
+        ],
+        "size": "5 MB",
+        "desc": "Legacy release for Minecraft 26.1.2 compatible client setups.",
+        "download_url": "mods/meteor-client-26.1.2.jar"
+      }
+    ]
+  },
+  {
+    "id": "dupe-client",
+    "name": "DonutSMP Dupe",
+    "visibility": false,
+    "version": "1.21.11",
+    "status": "UNDETECTED",
+    "size": "5 MB",
+    "downloads": "1524",
+    "download_url": "mods/DuperTrooper-12.11.jar",
+    "image": "",
+    "description": "The ultimate duplication utility for DonutSMP. This mod features undetected dupe methods, ender chest exploits, and /AH glitches specifically designed for high-stakes Donut SMP servers. Fully compatible with Fabric 1.21.11.",
+    "tags": [
+      "DONUTSMP DUPE",
+      "DUPLICATION GLITCH",
+      "MINECRAFT DUPE 2026",
+      "MINECRAFT HACKS 1.21.11"
+    ],
+    "requirements": [
+      "Fabric Loader",
+      "Fabric API"
+    ],
+    "highlights": [
+      "Working DonutSMP Dupe Methods",
+      "Packet-Based Dupe Logic",
+      "Tested on Sept 2026",
+      "Bypasses Latest DonutSMP Anti-Cheat"
+    ],
+    "usage": [
+      "Install Fabric Loader and API first.",
+      "Do '/rtp' and do '/home' 1 quickly after teleporting",
+      "Put item in ender chest and click dupe Hotkey ('~' default) or type command in chat",
+      "Disconnect and enter other server (any server works). Then come back to DonutSMP",
+      "If method above doesnt work, watch my video for newest method"
+    ]
+  }
+]
