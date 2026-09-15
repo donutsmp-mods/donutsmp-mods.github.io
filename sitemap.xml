@@ -12,7 +12,15 @@
   <!-- Vape V4 Client Cracked -->
   <url>
     <loc>https://donutsmp-mods.github.io/detail.html?id=vape-v4-cracked</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- OpSec Anti-Cheat Bypass -->
+  <url>
+    <loc>https://donutsmp-mods.github.io/detail.html?id=opsec-mod</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
