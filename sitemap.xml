@@ -44,15 +44,39 @@
   <!-- Krypton Client -->
   <url>
     <loc>https://donutsmp-mods.github.io/detail.html?id=krypton-client</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Glazed Addon DonutSMP -->
+  <url>
+    <loc>https://donutsmp-mods.github.io/detail.html?id=glazed-addon</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Base Finder & Storage Hunter -->
+  <url>
+    <loc>https://donutsmp-mods.github.io/detail.html?id=base-finder</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Auto AH Sniper -->
+  <url>
+    <loc>https://donutsmp-mods.github.io/detail.html?id=ah-sniper</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
 
   <!-- NEW: DonutSMP Dupe Mod -->
   <url>
     <loc>https://donutsmp-mods.github.io/detail.html?id=dupe-client</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
