@@ -39,11 +39,11 @@
     "id": "opsec-mod",
     "name": "OpSec Anti-Cheat Bypass Mod",
     "visibility": true,
-    "version": "1.21.8-1.21.11",
+    "version": "1.21.11 / 26.1.2",
     "status": "UNDETECTED",
     "size": "420 KB",
     "downloads": "8,940",
-    "download_url": "mods/Krypton-1.21.11+5.1.2.jar",
+    "download_url": "mods/opsec-1.21.11.jar",
     "image": "",
     "description": "OpSec Anti-Cheat Bypass is the essential stealth utility for DonutSMP. Automatically blocks server mod-list queries, sanitizes translation lookups, and spoofs your client so you can run Meteor Client, Glazed, and other mods 100% undetected without bans.",
     "tags": [
@@ -68,6 +68,30 @@
       "Drop the OpSec .jar file into your .minecraft/mods folder along with Fabric API.",
       "Run your preferred client (Meteor, Krypton, etc.) with OpSec installed.",
       "Stealth mode activates automatically on server connection."
+    ],
+    "versions": [
+      {
+        "version": "1.21.11",
+        "name": "OpSec Mod v1.21.11",
+        "badges": [
+          "Recommended",
+          "Latest"
+        ],
+        "size": "420 KB",
+        "desc": "Latest stealth build for Minecraft 1.21.8 – 1.21.11 anti-cheat bypass.",
+        "download_url": "mods/opsec-1.21.11+v1.1.7.jarr"
+      },
+      {
+        "version": "26.1.2",
+        "name": "OpSec Mod v26.1.2",
+        "badges": [
+          "Alternative",
+          "Legacy"
+        ],
+        "size": "390 KB",
+        "desc": "Legacy stealth build for Minecraft 26.1.2 client setups.",
+        "download_url": "mods/opsec-26.1-26.1.2+v1.1.7.jar"
+      }
     ]
   },
   {
