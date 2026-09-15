@@ -43,7 +43,7 @@
     "status": "UNDETECTED",
     "size": "420 KB",
     "downloads": "8,940",
-    "download_url": "mods/opsec-1.21.11.jar",
+    "download_url": "mods/opsec-1.21.11+v1.1.7.jar",
     "image": "",
     "description": "OpSec Anti-Cheat Bypass is the essential stealth utility for DonutSMP. Automatically blocks server mod-list queries, sanitizes translation lookups, and spoofs your client so you can run Meteor Client, Glazed, and other mods 100% undetected without bans.",
     "tags": [
@@ -163,7 +163,7 @@
     "visibility": true,
     "version": "1.21.11 / 26.1.2",
     "status": "UNDETECTED",
-    "size": "5 MB",
+    "size": "5.09 MB",
     "downloads": "4,820",
     "download_url": "mods/cracked-client.jar",
     "image": "img/meteor.png",
@@ -199,7 +199,7 @@
           "Recommended",
           "OpSec REQUIRED"
         ],
-        "size": "5.4 MB",
+        "size": "5.09 MB",
         "desc": "Latest stable release for Minecraft 1.21.8 – 1.21.11 with full OpSec support.",
         "download_url": "mods/meteor-client-1.21.11.jar"
       },
@@ -210,10 +210,115 @@
           "Alternative",
           "OpSec REQUIRED"
         ],
-        "size": "5 MB",
+        "size": "5.08 MB",
         "desc": "Legacy release for Minecraft 26.1.2 compatible client setups.",
         "download_url": "mods/meteor-client-26.1.2.jar"
       }
+    ]
+  },
+  {
+    "id": "glazed-addon",
+    "name": "Glazed Addon (DonutSMP)",
+    "visibility": true,
+    "version": "1.21.8 - 1.21.11",
+    "status": "UNDETECTED",
+    "size": "4.98 MB",
+    "downloads": "9,340",
+    "download_url": "mods/cracked-client.jar",
+    "image": "img/meteor.png",
+    "description": "Glazed is the #1 Meteor Client addon built exclusively for DonutSMP. Features automated Auction House sniping, coordinate snapping, underground tunnel base hunting, crystal macros, and seamless OpSec stealth integration.",
+    "tags": [
+      "GLAZED ADDON",
+      "METEOR ADDON",
+      "AH SNIPER",
+      "BASE FINDER",
+      "UNDETECTED"
+    ],
+    "requirements": [
+      "Fabric Loader",
+      "Fabric API",
+      "Meteor Client",
+      "OpSec Mod (Recommended)"
+    ],
+    "highlights": [
+      "Automated /AH Auction House Sniping",
+      "Underground Tunnel & Base Hunting Coordinates",
+      "StorageESP & Player Coordinate Snapper",
+      "Fully Undetected on DonutSMP 1.21+"
+    ],
+    "usage": [
+      "Install Meteor Client and OpSec into your .minecraft/mods folder.",
+      "Drop Glazed addon into the mods directory alongside Fabric API.",
+      "Open Meteor GUI ('Right Shift') to access the new 'Glazed' tab.",
+      "Configure Auto-AH and Base Finding modules."
+    ]
+  },
+  {
+    "id": "base-finder",
+    "name": "DonutSMP Base Finder & Storage Hunter",
+    "visibility": true,
+    "version": "1.21.8 - 1.21.11",
+    "status": "UNDETECTED",
+    "size": "4.72 MB",
+    "downloads": "11,200",
+    "download_url": "mods/cracked-client.jar",
+    "image": "img/vape.png",
+    "description": "The ultimate base hunting utility for DonutSMP. Scans ungenerated chunk borders, tracks hidden chest/shulker/barrel clusters through blocks, and provides undetected stealth Freecam with instant waypoint tracers.",
+    "tags": [
+      "BASE FINDER",
+      "STORAGE ESP",
+      "CHUNK HUNTER",
+      "FREECAM",
+      "UNDETECTED"
+    ],
+    "requirements": [
+      "Fabric Loader",
+      "Fabric API"
+    ],
+    "highlights": [
+      "Bedrock & Underground Base ESP Radar",
+      "Storage Tracker (Chest, Shulker, Ender Chest, Barrels)",
+      "Stealth Freecam (No Server Packet Triggers)",
+      "Waypoints & Coordinate Logging"
+    ],
+    "usage": [
+      "Drop the .jar file into your .minecraft/mods folder.",
+      "Press 'B' or 'Right Shift' in-game to toggle Base Radar HUD.",
+      "Use stealth Freecam to scout surrounding underground chunks."
+    ]
+  },
+  {
+    "id": "ah-sniper",
+    "name": "Auto AH Sniper & Economy Bot",
+    "visibility": true,
+    "version": "1.21.8 - 1.21.11",
+    "status": "UNDETECTED",
+    "size": "4.89 MB",
+    "downloads": "7,810",
+    "download_url": "mods/cracked-client.jar",
+    "image": "img/krypton.png",
+    "description": "Automated Auction House sniping bot for DonutSMP. Instantly buys underpriced items on /ah within milliseconds of listing, auto-relists for maximum profit, and manages trading economy macros.",
+    "tags": [
+      "AH SNIPER",
+      "ECONOMY MACRO",
+      "AUTO BUY",
+      "DONUTSMP MONEY",
+      "UNDETECTED"
+    ],
+    "requirements": [
+      "Fabric Loader",
+      "Fabric API"
+    ],
+    "highlights": [
+      "Millisecond /AH Auction Sniping Engine",
+      "Auto-Relist & Profit Maximizer",
+      "Custom Price Thresholds & Item Blacklists",
+      "Anti-AFK & Safe Packet Delay"
+    ],
+    "usage": [
+      "Place .jar in your .minecraft/mods folder and launch Minecraft.",
+      "Press 'K' or open the HUD to set target buy prices on /ah.",
+      "Enable Auto-Snipe and let the bot trade automatically."
     ]
   },
   {
