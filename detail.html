@@ -11,7 +11,6 @@
         content="Download undetected DonutSMP clients, cheats, and mods with direct download links and full installation guides.">
     <meta name="keywords"
         content="DonutSMP cheat, DonutSMP client, Meteor Client, Krypton Client, Vape V4, DonutSMP mods, DonutSMP Rig, free Minecraft clients">
-    <link rel="canonical" href="https://donutsmp-mods.github.io/detail.html">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Discord Embeds -->
@@ -151,6 +150,23 @@
                     // Update Page Title and SEO Meta Tags dynamically
                     document.title = `${p.name} | Cracked Clients DonutSMP`;
                     
+                    // Set dynamic canonical URL and og:url for each individual mod
+                    let canonicalTag = document.querySelector('link[rel="canonical"]');
+                    if (!canonicalTag) {
+                        canonicalTag = document.createElement('link');
+                        canonicalTag.rel = 'canonical';
+                        document.head.appendChild(canonicalTag);
+                    }
+                    canonicalTag.href = window.location.href;
+
+                    let ogUrl = document.querySelector('meta[property="og:url"]');
+                    if (!ogUrl) {
+                        ogUrl = document.createElement('meta');
+                        ogUrl.setAttribute('property', 'og:url');
+                        document.head.appendChild(ogUrl);
+                    }
+                    ogUrl.setAttribute('content', window.location.href);
+
                     const metaDesc = document.getElementById('meta-desc');
                     if (metaDesc) metaDesc.setAttribute('content', p.description);
 
