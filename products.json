@@ -96,34 +96,36 @@
   },
   {
     "id": "krypton-client",
-    "name": "Krypton Client",
+    "name": "Krypton Client Cracked",
     "visibility": true,
     "version": "1.21.11",
     "status": "UNDETECTED",
-    "size": "1.91 MB",
+    "size": "1.70 MB",
     "downloads": "3,210",
     "download_url": "mods/Krypton-1.21.11+5.1.2.jar",
     "image": "img/krypton.png",
-    "description": "Krypton Cracked Client is an all-in-one powerhouse client designed specifically for DonutSMP. While the base version focuses on performance, Krypton Cracked expands into a full utility suite featuring advanced combat macros, automated economy tools, and specialized base-finding algorithms.",
+    "description": "Krypton Client Cracked is the all-in-one powerhouse client for DonutSMP 1.21.11 on GitHub. Features advanced combat macros, automated /ah sell sniping, storage base finding, undetected radar, and high-performance FPS optimization.",
     "tags": [
+      "KRYPTON CLIENT GITHUB",
+      "KRYPTON CLIENT 1.21.11",
+      "KRYPTON CRACKED GITHUB",
       "AH SELL SNIPER",
-      "Base Finding",
-      "ESP"
+      "BASE FINDING"
     ],
     "requirements": [
       "Fabric Loader",
       "Fabric API"
     ],
     "highlights": [
-      "Auto-Auction",
-      "Inventory Sniping",
-      "DonutSMP Bypasses",
-      "Automatic Base Finding"
+      "Krypton Client 1.21.11 Full Crack",
+      "Auto-Auction & Inventory Sniping",
+      "DonutSMP Anti-Cheat Bypasses",
+      "Automatic Base Finding & StorageESP"
     ],
     "usage": [
       "Open Krypton GUI with '~'.",
       "Enable and customize overlays from the HUD tab (Active + Edit).",
-      "Now its Krypton Client Free Cracked"
+      "Now its Krypton Client Free Cracked for Minecraft 1.21.11"
     ]
   },
   {
@@ -323,37 +325,37 @@
   },
   {
     "id": "dupe-client",
-    "name": "DonutSMP Dupe",
+    "name": "DonutSMP Dupe Mod",
     "visibility": false,
     "version": "1.21.11",
     "status": "UNDETECTED",
-    "size": "5 MB",
-    "downloads": "1524",
+    "size": "3.76 MB",
+    "downloads": "1,524",
     "download_url": "mods/DuperTrooper-12.11.jar",
     "image": "",
-    "description": "The ultimate duplication utility for DonutSMP. This mod features undetected dupe methods, ender chest exploits, and /AH glitches specifically designed for high-stakes Donut SMP servers. Fully compatible with Fabric 1.21.11.",
+    "description": "Download the working DonutSMP Dupe Mod for Minecraft 1.21.11. Features undetected packet-based item duplication, ender chest exploits, and /ah glitches specifically created for Donut SMP. 100% free download on Fabric 1.21.11.",
     "tags": [
+      "DONUT SMP DUPE MOD",
       "DONUTSMP DUPE",
-      "DUPLICATION GLITCH",
-      "MINECRAFT DUPE 2026",
-      "MINECRAFT HACKS 1.21.11"
+      "DONUT DUPE MOD",
+      "DONUT SMP DUPE",
+      "DONUTSMP DUPE MOD"
     ],
     "requirements": [
       "Fabric Loader",
       "Fabric API"
     ],
     "highlights": [
-      "Working DonutSMP Dupe Methods",
+      "Working DonutSMP Dupe Methods 1.21.11",
       "Packet-Based Dupe Logic",
-      "Tested on Sept 2026",
-      "Bypasses Latest DonutSMP Anti-Cheat"
+      "Ender Chest & /AH Glitch Bypass",
+      "Tested Undetected on DonutSMP"
     ],
     "usage": [
-      "Install Fabric Loader and API first.",
-      "Do '/rtp' and do '/home' 1 quickly after teleporting",
-      "Put item in ender chest and click dupe Hotkey ('~' default) or type command in chat",
-      "Disconnect and enter other server (any server works). Then come back to DonutSMP",
-      "If method above doesnt work, watch my video for newest method"
+      "Install Fabric Loader and Fabric API first.",
+      "Do '/rtp' and do '/home' 1 quickly after teleporting.",
+      "Put item in ender chest and click dupe Hotkey ('~' default) or type command in chat.",
+      "Disconnect and enter other server, then reconnect to DonutSMP to dupe."
     ]
   }
 ]
