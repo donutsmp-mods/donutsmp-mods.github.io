@@ -242,7 +242,9 @@
                                     return `<span class="version-badge ${colorClass}">${b}</span>`;
                                 }).join('');
 
-                                const fileName = v.download_url ? v.download_url.split('/').pop() : 'client.jar';
+                                const targetVer = (v.version || p.version || '1.21.11').trim().replace(/[^a-zA-Z0-9.-]/g, '-');
+                                const fileName = `${p.id}-${targetVer}.jar`;
+                                const downloadUrl = v.download_url || 'mods/mod.jar';
                                 return `
                                     <div class="version-item-card">
                                         <div class="version-item-info">
@@ -256,7 +258,7 @@
                                                 ${v.size || p.size}
                                             </span>
                                         </div>
-                                        <a href="${v.download_url || '#'}" download="${fileName}" class="btn-version-download">
+                                        <a href="${downloadUrl}" download="${fileName}" class="btn-version-download">
                                             <span class="material-symbols-outlined" style="font-size:18px;">download</span>
                                             Download
                                         </a>
@@ -294,10 +296,10 @@
                             });
                         } else {
                             // Single version direct download
-                            dlBtn.href = p.download_url || "#";
-                            if (p.download_url && p.download_url !== "#") {
-                                dlBtn.setAttribute('download', p.download_url.split('/').pop());
-                            }
+                            const targetVer = (p.version || '1.21.11').split('/')[0].trim().replace(/[^a-zA-Z0-9.-]/g, '-');
+                            const fileName = `${p.id}-${targetVer}.jar`;
+                            dlBtn.href = p.download_url || "mods/mod.jar";
+                            dlBtn.setAttribute('download', fileName);
                             dlBtn.addEventListener('click', () => trackDownload(p.id));
                         }
 
